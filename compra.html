@@ -13,18 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Indie+Flower&family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./estilo.css"> <!--Referencia a la hoja de estilo-->
-
-    <title>JCTAPICERIA TEST</title> <!--Titulo-->
+   
+    <title>CONTACTO-JCTAPICERIA</title> <!--Titulo-->
 </head>
 
 <body>
     
-    <!--Lo que el usuario ve siempre en el body hola--> 
+    <!--Lo que el usuario ve siempre en el body-->
 
     <header>
         <div class="contenedormenu">
             <div class="Logo">
                 <img src="./Imagenes/JC Tapiceria Logo.png" alt="Descripcion cuando no aparece la foto" width="200px">
+            </div>
+            <div class="t1">
+                <h1></h1>
             </div>
             <div class="nav">
                 <nav>
@@ -39,58 +42,45 @@
             </div>
         </div>
 
-
+     <hr> <!--Esto te dibuja la linea-->
   
        
     </header>
 
+    <h1>Resumen de la compra</h1>
+    
+     <div class="contacto">
+        <section>
+            <div id="detalle"></div>
+        </section>
+    
+
    
-    <main>
 
-        <div class="imagen">
-            <ul>
-                <li><img src="./Imagenes/Chester Index.png"
-                    alt="Sillones" width="100%"></li>    
-            </ul>    
-        </div>
-
-        <div class="panel">
-            <p>Somos una empresa familiar creada en el año 2020 que se dedica a realizar sillones, respaldos de cama, fundas de almohadones, etc. Estamos ubicados en el barrio de Lanús.
-                Contamos con una amplia variedad de productos de alta calidad. Nuestros sillones están fabricados con madera saligna.</p> <!--Para escribir parrafos-->
-        </div>        
-
-    </main>
-
-    <a href="#comentario"><h1>Nuestros Compradores...</h1></a> <!--Enlace Interno te manda a una seccion de la pagina-->
-
-    <section id="comentario">
-    <div class="grid-contenedorcom">
-        <div class="comentarios">
-            <img src="./Imagenes/Sillones/Divan Chester.jpg" alt="Chester" width="60" height="60">
-            <h3><b>Oscar Tignoti</b></h3>
-            <h4 class="sillon">Sillon 3 cuerpos</h4> 
-            <h5>El sillón es super cómodo, excelente, superaron mis expectativas.</h5><br>
-            <br>
-        </div>
-        <div class="comentarios">
-            <img src="./Imagenes/Sillones/Mecedora Beige.jpg" alt="Mecedor" width="60" height="60">
-            <h3><b>Marcos Lagos</b></h3>
-            <h4>Sillón Mecedor</h4>
-            <h5>Excelente calidad y confort, los recomiendo.</h5><br>
-            
-        </div>
-        <div class="comentarios">
-            <img src="./Imagenes/Sillones/Circular.jpg" alt="Circular" width="60" height="60">
-            <h3><b>Nicolas Pavovich</b></h3>
-            <h4>Respaldo de Cama</h4>
-            <h5>Quedó tal cual lo imagine, la calidad es increible.</h5>
-            <br>
-        </div>
+    <form id="formulario" action="https://formspree.io/f/meozqolr" method="POST">
+        <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+        <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+        <br>
+        <hr>
+        <label>Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+        <br>
+        <label>Email:</label>
+        <input type="email" id="contactoEmail" name="email" placeholder="Correo electrónico" required>
+        <br>
+        <label>Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+        <br><br>
+        <button type="submit" id="botonEnviar">Confirmar Compra</button>
+        <br><br>
+    </form>
     </div>
-    <br><br><br>
-    </section>
 
+     <br><br><br>
 
+    <script src="./js/compra.js"></script>
+
+ 
     <footer>
         
         <div class="contenedorfooter">
@@ -123,9 +113,6 @@
         </div>    
     </footer> <!--Para los buscadores-->
     
-        <script src="./js/dom.js"></script> <!--Llamo al archivo de Javascript-->
-
-</body>
+    </body>
     
     </html>
-    

@@ -43,15 +43,25 @@
      
     <section>
 
+    <!-- <h1>Tienda Online</h1>
+         <div id="carrito">
+         <h2>Carrito de Compras</h2>
+         <p>Total: $<span id="total-carrito">0</span></p>
+         <ul id="lista-carrito"></ul>
+         </div>
+      
+         <button id="btnPagar">Pagar</button>
+         <button id="vaciar-carrito">Vaciar Carrito</button> 
+         --> 
+
         <h1>Nuestras Mecedoras...</h1>
 
         <div class="contenedor-prod">
             <div class="productos">
-                <a href="./mecedoras.html">
                 <img src="./Imagenes/Sillones/Mecedora Beige.jpg" alt="Sillones" width="100%">
                 <h1><b>Mecedora Patas Rectas</b></h1>
                 <h4>Sillón Mecedor Patas Rectas color a elección.Tela Pana, Chenille o Antidesgarro.</h4> 
-                <button>Comprar</button>
+                <button class="comprar" data-id="0" data-nombre="Mecedora Patas Rectas" data-precio="280000">Comprar</button>
                 <br>
                 <br>
                 <br>
@@ -62,7 +72,7 @@
                 <img src="./Imagenes/Sillones/Mecedora Ondas 2.jpg" alt="Mecedoras" width="100%">
                 <h1><b>Mecedora Patas Ondas</b></h1>
                 <h4>Sillón Mecedor Patas Ondas color a elección.Tela Pana, Chenille o Antidesgarro.</h4>
-                <button>Comprar</button>
+                <button class="comprar" data-id="1" data-nombre="Mecedora Patas Ondas" data-precio="280000">Comprar</button>
                 <br><br><br>
                 </a>
             </div>
@@ -71,7 +81,7 @@
                 <img src="./Imagenes/Sillones/Mecedora sin cap.jpg" alt="Respaldos" width="100%">
                 <h1><b>Mecedora sin capitone</b></h1>
                 <h4>Sillón Mecedor sin Capitone color a elección.Tela Pana, Chenille o Antidesgarro.</h4>
-               <button>Comprar</button>
+               <button class="comprar" data-id="2" data-nombre="Mecedora Sin Capitone" data-precio="280000">Comprar</button>
                 <br><br><br>
                 </a>
             </div>
@@ -114,7 +124,7 @@
     </div>    
 </footer> <!--Para los buscadores-->
 
-
+<script src="./js/tienda.js"></script>
 
 </body>
 

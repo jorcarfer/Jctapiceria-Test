@@ -158,6 +158,16 @@ li{
         margin: 1%;
 }
 
+.ulcarrito{
+
+    color:black;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    align-items: initial;
+    margin-left: 0%;
+
+}
 .comentarios{
         border: darkgoldenrod 3px solid;
         background-color: darkgoldenrod;
