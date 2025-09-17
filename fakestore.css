@@ -45,7 +45,7 @@ Estilo para Fakestore con el Botón Comprar en aling buttom
 /* Estilos para el precio */
 .card-content p {
   font-size: 1.1rem;
-  color: #2a5d34;
+  color: black;
   font-weight: bold;
   margin: 0;
 }
@@ -59,7 +59,7 @@ Estilo para Fakestore con el Botón Comprar en aling buttom
 
 /* Estilos para el botón de compra */
 .comprar-btn {
-  background-color: #4CAF50;
+  background-color:goldenrod;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -73,7 +73,7 @@ Estilo para Fakestore con el Botón Comprar en aling buttom
 }
 
 .comprar-btn:hover {
-  background-color: #45a049;
+  background-color: goldenrod;
 }
 
 /* Estilos para el modal del carrito */
@@ -117,7 +117,7 @@ Estilo para Fakestore con el Botón Comprar en aling buttom
 }
 
 .modal-contenido h2 {
-  color: #2a5d34;
+  color:chocolate;
   margin-top: 0;
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
@@ -145,7 +145,7 @@ Estilo para Fakestore con el Botón Comprar en aling buttom
   flex: 1;
   text-align: right;
   font-weight: bold;
-  color: #2a5d34;
+  color: black;
 }
 
 #total-carrito {
@@ -184,12 +184,12 @@ Estilo para Fakestore con el Botón Comprar en aling buttom
 }
 
 #pagar {
-  background-color: #4CAF50;
+  background-color:goldenrod;
   color: white;
 }
 
 #pagar:hover {
-  background-color: #388e3c;
+  background-color: goldenrod;
 }
 
 /* Estilos para el contador del carrito */

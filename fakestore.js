@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contenedor = document.getElementById("fakestore-container");
 
     //fetch("https://fakestoreapi.com/products")
-    fetch("./js/productos.js")
+    fetch("./js/mecedora.js")
         .then((response) => {
             if (!response.ok) throw new Error("Error en la red");
             return response.json();
@@ -154,9 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error al obtener productos:", error);
             contenedor.innerHTML = "<p>Hubo un problema al cargar los productos.</p>";
         });
-
-        
-
+       
     // Event listeners
     document.getElementById("icono-carrito")?.addEventListener("click", mostrarModalCarrito);
     document.getElementById("vaciar-carrito")?.addEventListener("click", vaciarCarrito);

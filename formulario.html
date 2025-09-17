@@ -34,8 +34,8 @@
                     <ul class="navul">
                         <li><a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
                         <li><a href="./productos.html"><i class="fa-solid fa-couch"></i>Productos</a></li>
-                        <li><a href="./formulario.html"><i class="fa-solid fa-address-card"></i>Contacto</a></li>
-                        <li><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+                        <li><a href="./fakestore.html"><i class="fa-solid fa-couch"></i>Productos API</a></li>
+                         <li><a href="./formulario.html"><i class="fa-solid fa-address-card"></i>Contacto</a></li>
                         <li><a href="./Ubicación.html"><i class="fa-solid fa-map-location-dot" ></i>Ubicación</a></li>
                     </ul>
                 </nav>
@@ -54,30 +54,30 @@
 
     <div class="contacto">
      
-        <form action="https://formspree.io/f/mjkwglaj" method="POST">
+        <form id="formulario" action="https://formspree.io/f/mjkwglaj" method="POST">
             <h4>Nombre y Apellido:</h4>
            
-            <input type="text" placeholder="Ingrese su nombre" name="Nombre" id="name">
+            <input type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre" onfocusout="enviarFormulario()">
            <br>
            
            <h4>E-Mail:</h4>
            
-            <input type="email" placeholder="Ingrese su email" name="Email" id="email">
+            <input type="email" placeholder="Ingrese su email" name="contactoEmail" id="contactoEmail" onfocusout="enviarFormulario()">
             <br>
             
             <h4>Consulta:</h4>
             
-            <textarea name="consulta" rows="5" cols="30" placeholder="Escriba su consulta..."></textarea>
+            <textarea name="consulta" rows="5" cols="30" placeholder="Escriba su consulta..." id="texto" onfocusout="enviarFormulario()"></textarea>
            <br>
            <br>
-            <input type="submit" placeholder="Enviar"  name="Enviar" id="enviar">
-            <input type="reset" placeholder="Borrar"  name="Borrar" id="borrar">
+            <input type="submit" placeholder="Enviar" id="comprar-btn" class="comprar-btn">
+            <input type="reset" placeholder="Borrar"  name="Borrar" id="borrar" class="comprar-btn">
             <br>
            <br>
         </form>
     </div>
  
-
+    <script src="./js/Valida formulario.js"></script>
 
      <br>
      <br>

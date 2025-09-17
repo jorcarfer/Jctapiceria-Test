@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    
     const productos = JSON.parse(sessionStorage.getItem('productos')) || [];
     const total = sessionStorage.getItem('total') || 0;
     const totalNumerico = parseFloat(total) || 0;
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     for (let i = 0; i < productos.length; i++) {
         const productoActual = productos[i]; 
-        resumenTextoHTML += `${productoActual.nombre}: $${parseFloat(productoActual.precio).toFixed(3)}<br>`;
+        resumenTextoHTML += `- ${productoActual.nombre}: $${parseFloat(productoActual.precio).toFixed(3)}<br>`;
     }
 
     resumenTextoHTML += `<br><strong>Total a pagar: $${totalFormateado}</strong>`;
@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const emailContacto = document.getElementById('contactoEmail').value.trim();
         const telefonoContacto = document.getElementById('telefono').value.trim();
 
-        if (!nombreContacto || !emailContacto || !telefonoContacto) {
-            alert("Por favor, completa todos los campos de contacto antes de enviar.");
-            return; // Detenemos la función si falta algún campo.
+        if (!nombreContacto || !emailContacto) {
+            alert("Por favor, completa con tu nombre completo y un email antes de enviar.");
+            return;
         }
 
         let detallesCarritoParaEnvio = '';
@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.getElementById('carritoData').value = detallesCarritoParaEnvio;
         document.getElementById('totalCarrito').value = `$${totalFormateado}`;
+        
+        // Enviar el formulario
         document.getElementById('formulario').submit();
     }
 
@@ -44,7 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
    
     if (botonEnviar) {
         botonEnviar.addEventListener('click', enviarFormulario);
+        localStorage.removeItem("carrito");
+        sessionStorage.clear()
     } else {
         console.warn("ADVERTENCIA: No se encontró el botón con ID 'botonEnviar'.");
     }
-}); 
+});
